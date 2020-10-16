@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="eng">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+      <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+      <title>Document Upload Screen</title>
+   </head>
+    
+    <body>
+        <!-----------------------------HEADERS----------------------------------------------------------------------------------------------------->
+        <header>
+                <h1>Welcome To Docuverus</h1>
+                <h3>Please upload your own documents. Any co-applicant document(s) will be uploaded separately by them</h3>
+        </header>
+        <!--------------------------------------Section Yellow  Note First------------------------------------------------------------------------->
+        <section class="section_note1">
+       <text>Note: This link will expire in 30 Days</text>
+       
+        </section>
+        <!--------------------------------------Section Top Border----------------------------------------------------------------------------------------->
+        <section class="section_border"></section>
+       
+        <!-------------------------------Top COntent-------------------------------------------------------------------------------------------->
+        <section class="section_TopContent">
+        <text>This Application uses advanced computer vision technology. if you have proof of income documents on hand, uploading them here will help make the process of completing this application faster and easier. If you don’t have documents available-- or if you don’t have clear images of your documents-- you can provide these documents later. Just answer ”No” to the question(s) below and provide the relevant reaason.</text>
+        </section>
+       
+        <!--------------------------------Proof Of Identitiity------------------------------------------------------------------------------------->
+        <section class="section_ProofIdentity">
+        <text>Proof of identity</text>
+            <p class=p_FirstQue>Do you have Proof of Identity available to upload?</p>
+            <p class="p_subpara">Document clear?</p><p class="p_subpara">Document yours?</p><p class="p_subpara">Taking a Photo</p><p class="p_subpara">one Image?</p>
+        </section>
+        
+        <div class="ProofIdentity-switch">
+            <input type="checkbox" id="c1">
+            <label for="c1">
+	           <span>Yes</span>
+	           <span>No</span>
+            </label>
+                </div>
+      
+        <!--------------------------------------------Drag Drop------------------------------------------------------------------------------------>
+        
+        <section class="section_dragdrop">
+            
+            <div class="col span-1-of-2 First_Drag">
+             <a class="btn btn-selectFile" href="#">Select File</a>
+                <text>Or Drop File Here</text>
+            </div>
+             <div class="col span-1-of-2 Second_Drag">
+                <p class="p1_second_Drag">Use Your Mobile to take Photoes</p><a class="btn btn-next" href="#">Next</a>
+                 <p class="p2_second_Drag">Securely continue verifiation on your mobile</p>
+                  
+            </div>
+        </section>
+        <!-------------------------------------------Section Yellow Note Second--------------------------------------------------------------------->
+        
+        <section class="section_note2">
+        <text> Please make sure to upload clear images of both the front and back of your driver's license.  If you already have them on your device, you can upload them now.  If not, just click the "Use Mobile Phone" link to use your mobile phone to capture these images.</text>
+        </section>
+        <!--------------------------------------------Section_SSN-------------------------------------------------------------------------------------->
+           <section class="section_SSN">
+        <text>SSN</text>
+            <p class=p_SecondQue>Do you have Proof of SSN?</p>
+            <p class="p_subpara2">Document clear?</p><p class="p_subpara2">Document yours?</p><p class="p_subpara2">one Image?</p>
+        </section>
+          <div class="SSN-switch">
+            <input type="checkbox" id="c2">
+            <label for="c2">
+	           <span>Yes</span>
+	           <span>No</span>
+            </label>
+                </div>
+        <!--------------------------------SSN Drag & Drop--------------------------------------------------------------------------------------------->
+  <section class="section_SSNDropDown">
+            
+            <div class="col span-1-of-1 Third_Drag">
+             <a class="btn btn-SSNselectFile" href="#">Select File</a>
+                <text>Or Drop File Here</text>
+            </div>
+         
+      
+        </section>
+    <!------------------------------------------PROOF OF EMPLOYMENT INCOME-------------------------------------------------------------------->
+           <section class="section_Employment_income">
+        <text>Proof of Employment Income</text>
+            <p class=p_ThirdQue>Are you currently employed(or starting a new Job)?</p>
+     </section>
+          
+        <div class="EmploymentIncome-switch">
+            <input type="checkbox" id="c3">
+            <label for="c3">
+	           <span>Yes</span>
+	           <span>No</span>
+            </label>
+                </div>
+        <!---------------------------------------PROOF OF EMPLOYMENT INCOME Drag & Drop------------------------------------------------------------>
+          <section class="section_EmplymentIncome">
+            
+            <div class="col span-1-of-1 Fourth_Drag">
+             <a class="btn btn-Employee_selectFile" href="#">Select File</a>
+                <text>Or Drop File Here</text>
+            </div>
+          </section>
+       
+        
+        
+        <!---------------------------------------------Section Yellow Note Second--------------------------------------------------------------->
+        <section class="section_note3">
+       <text>If you are selft-employed or starting a new job, please answer”Yes” and include your self-employment or new employement in the next response.</text>
+    </section>
+        <!--------------------------------------------------EMPLOYMENT INCOME Drop Down--------------------------------------------------------------------->
+        <section class="section_EmplymentIncome_Ques2">
+        <p>How many employer(s) do you have?</p>
+                    <select name="find us" id="find us">
+                        <option value="1" selected>1</option>
+                        <option value="Above-20">2</option>
+                        <option value="Above-60">5</option>
+                        <option value="Above-100">10</option>
+                     </select>
+            <text>i</text>
+        </section>
+        <!-----------------------------------------------------Section Yellow Note Fourth----------------------------------------------------------------->
+           <section class="section_note4">
+       <text>If you are selft-employed, oplease include as part of your response here. For Example. if you are employed by an employer ans are also self-employed. then you should select ”2”.</text>
+    </section>
+        <!----------------------------------------EMPLOYMENT INCOME Toggle-------------------------------------------------------------------------------->
+        
+        <section class="section_EmplymentIncome_Ques3">
+        <p>Do you have current proof of employment icome covering 2 most recent weeks avaialble?</p> </section>
+             <div class="section_EmplymentIncome_Ques3-switch">
+            <input type="checkbox" id="c4">
+            <label for="c4">
+	           <span>Yes</span>
+	           <span>No</span>
+            </label>
+                </div>
+          
+        <section class="section_Emplymnet2">
+            <div class="col span-1-of-1 Fifth_Drag">
+             <a class="btn btn-Employee_selectFile2" href="#">Select File</a>
+                <text>Or Drop File Here</text>
+            </div>
+       </section>
+        <!--------------------------------------------Section Yellow Note Fifth-------------------------------------------------------------------->
+        <section class="section_note5">
+       <text>Please upload paystubs/earnings statements here, if you are self-employed, you can upload bank statements in the “Bank Statement” section. If you are starting new job, you can also upload an offer letter here.</text>
+    </section>
+        <!--------------------------------------------Section Yellow Note Sixth-------------------------------------------------------------------->
+        <section class="section_note6">
+       <text>Note: Please upload Original PDF documents. This will help us process the application faster.</text>
+    </section>
+        <!-----------------------------------------------OTHER INCOME------------------------------------------------------------------------------>
+   
+           <section class="section_Other_income">
+        <text>Other Income or Information</text>
+            <p class=p_Other_incomeQue>Do you have any other non-employment income or housing assistance?</p>
+     </section>
+          
+        <div class="OtherIncome-switch">
+            <input type="checkbox" id="c5">
+            <label for="c5">
+	           <span>Yes</span>
+	           <span>No</span>
+            </label>
+                </div>
+        <!---------------------------------------OTHER INCOME Drag & Drop------------------------------------------------------------>
+          <section class="section_OtherIncome">
+            
+            <div class="col span-1-of-1 Sixth_Drag">
+             <a class="btn btn-OtherIncome_selectFile" href="#">Select File</a>
+                <text>Or Drop File Here</text>
+            </div>
+          </section>
+        <!----------------------------------------BANKING INFORMATION------------------------------------------------------------------------------------>
+   
+      
+        <section class="section_BankingInformation">
+        <text>BANKING INFORMATION</text>
+            <p class=p_Bankinginfo>Do you have any other non-employment income or housing assistance?</p>
+     </section>
+        
+               <div class="BankingInfo-switch">
+            <input type="checkbox" id="c6">
+            <label for="c6">
+	           <span>Yes</span>
+	           <span>No</span>
+            </label>
+                </div>
+          <!---------------------------------------BANKING INFORMATION Drag & Drop------------------------------------------------------------>
+          <section class="section_BankInfoDrag">
+            
+            <div class="col span-1-of-1 Seventh_Drag">
+             <a class="btn btn-section_BankInfo_selectFile" href="#">Select File</a>
+                <text>Or Drop File Here</text>
+            </div>
+          </section>
+        <!--------------------------------------------Section Yellow Note Seventh-------------------------------------------------------------------->
+        <section class="section_note7">
+       <text>IF you have bank statement(s) available to upload now, you can answer”Yes” and upload the documents here. IF you don’t have documents, you can answer “No” for now and provide bank information on the income and Banking section of this application.</text>
+    </section>
+        <!------------------------------------------Section OTHER DOCUMNETS-------------------------------------------------------------------------->
+        <section class="section_OtherDocumnets">
+        <text>Other Documents</text>
+            <p class=p_Otherinfo>Do you have any other Documents?</p>
+        </section>
+            <div class="OtherInfo-switch">
+            <input type="checkbox" id="c7">
+            <label for="c7">
+	           <span>Yes</span>
+	           <span>No</span>
+            </label>
+                </div>
+          <!---------------------------------------BSection OTHER DOCUMNETS-----Drag & Drop------------------------------------------------------------>
+          <section class="section_OtherDocuDrag">
+            
+            <div class="col span-1-of-1 Eighth_Drag">
+             <a class="btn btn-OtherDocu_selectFile" href="#">Select File</a>
+                <text>Or Drop File Here</text>
+            </div>
+          </section>
+        <!--------------------------------------------Section Yellow Note Eighth-------------------------------------------------------------------->
+        <section class="section_note8">
+       <text>Eg. Tax documents or any other miscellaneous document(s). etc. Note, if you don’t have other documents availablenow, they can be added later on the income and Banking section of the application.</text>
+    </section>
+        <!-------------------------------------------------LAST BUTTON-------------------------------------------------------------------------------->
+        <section class="section_LastButton">
+        <a class="btn btn-LastButton" href="#">Continue</a></section>
+    </body>
+    
+</html>

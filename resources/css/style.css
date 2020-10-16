@@ -1,0 +1,1169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html{
+    background: #E3E3E3;
+   
+    font-family: 'Lato','Arial';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 2000px
+}
+
+/*------------------------HEADERS-------------------------------------------------*/
+h1{
+text-align: center;
+font-family: monospace;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 20px;
+color: #000000;
+margin-top: 20px;
+}
+h3{
+text-align: center;
+font-size: 14px;
+line-height: 09px; 
+}
+
+/*------------------------Section Yellow Note First----------------------------------------------------*/
+.section_note1{
+    width: 40%;
+    background: #F5F39B;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 10px;
+   
+}
+/*------------------------------Section Top Border-----------------------------------------------------------------------*/
+.section_border{
+  border-bottom: 1px solid black;   
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px
+}
+/*-------------------------Top COntent-------------------------------------------------------------------------*/
+.section_TopContent{
+    width: 95%;
+    margin-left: 2%;
+    background: #D9EDF7;
+    margin-top: 20px;
+    text-align: center;
+   
+    }
+.section_TopContent text{
+    font-size: 10px;
+    margin-left: 20px;
+   font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    color: #31708F;
+    word-spacing: 0px;
+   }
+
+/*--------------------------Proof Of Identitiity----------------------------------------------------------------------*/
+.section_ProofIdentity{
+    background-color:#2DC3E8;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 20px;
+    height: 25px;
+  }
+.section_ProofIdentity text{
+    color: white;
+   font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.p_FirstQue{
+    margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+.p_FirstQue::after {
+  content: ' \002A';
+    color: red;
+    
+}
+.p_subpara{
+    color: #0606ff;
+     margin-left: 30px;
+     font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size:12px;
+line-height: 15px;
+
+}
+/*-----------------------------Toggle Switch Proof Identity---------------------------------------------------------------------------*/
+.ProofIdentity-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+    margin-top: 15px
+}
+.ProofIdentity-switch input {
+display: none;
+}
+.ProofIdentity-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.ProofIdentity-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.ProofIdentity-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.ProofIdentity-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+/*-------------------------------Drag Drop------------------------------------------------------------------------------------------*/
+.section_dragdrop{
+    height: 64px;
+    background-color: white;
+    width: 70%;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.First_Drag{
+    background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-family: Segoe UI;
+}
+.First_Drag text{
+    font-size: 14px;
+     margin-left: 25px;
+   
+}
+.Second_Drag{
+    background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+     padding: 10px 10px;
+}
+.p1_second_Drag{
+    font-size: 12px;
+    line-height: 0px;
+   font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+}
+.p2_second_Drag{
+    font-size: 12px;
+    line-height: 0px;
+}
+.btn-next{
+    text-decoration: none;
+    margin-left: 250px; 
+    background: #2DC3E8;
+    border-radius: 2px;
+    color: white;
+    padding: 7px 17px;
+    font-size: 15px;
+  }
+.btn-selectFile{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.section_note2{
+    width: 99%;
+    background: #F5F39B;
+  height: 35px;
+ margin-left: 0.5%;
+    padding: 0px 12px;
+    word-spacing: 0px;
+    
+}
+.section_note2 text{
+    font-size: 9px;
+   line-height: 1px;
+    font-weight: 500;
+    font-family: Segoe UI;
+}
+/*-------------------------------------------SSN------------------------------------------------------------------------------------*/
+.section_SSN{
+       background-color:#2DC3E8;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 20px;
+    height: 25px;
+     
+}
+.section_SSN text{
+     color: white;
+   font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.p_SecondQue{
+    margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+.p_SecondQue::after {
+  content: ' \002A';
+    color: red;
+}
+.p_subpara2{
+    color: blue;
+    margin-left: 30px;
+     font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size:12px;
+line-height: 15px;
+
+}
+/*-----------------------------------SSN DRAG DROP--------------------------------------------------------------------------------------------------------*/
+.section_SSNDropDown{
+     background-color: aqua;
+    width: 70%;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.Third_Drag{
+background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 10px 10px;
+font-size: 18px;
+    margin-left: 25px;width: 50%;
+    margin-bottom: 20px;
+    
+   }
+.btn-SSNselectFile{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+.Third_Drag text{
+font-size: 14px;
+margin-left: 25px;
+font-family: Segoe UI;
+font-style: normal;
+}
+/*--------------------------------------------PROOF OF EMPLOYMENT INCOME----------------------------------------------------------------------------*/
+.section_Employment_income{
+       background-color:#2DC3E8;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 120px;
+    height: 25px;
+}
+.section_Employment_income text{
+   color: white;
+   font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.p_ThirdQue{
+    margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+.p_ThirdQue::after {
+  content: ' \002A';
+    color: red;
+}
+/*---------------------------------------------------EMPLOYMENT INCOME Drag & Drop--------------------------------------------------------------------*/
+.section_EmplymentIncome{
+     background-color: aqua;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.Fourth_Drag{
+background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 10px 10px;
+font-size: 18px;
+margin-left: 25px;width: 50%;
+margin-bottom: 20px;
+}
+.btn-Employee_selectFile{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+.Fourth_Drag text{
+font-size: 14px;
+margin-left: 25px;
+font-family: Segoe UI;
+font-style: normal;
+}
+/*-----------------------------Toggle Switch SSN---------------------------------------------------------------------------*/
+.SSN-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+    margin-top: 15px
+}
+.SSN-switch input {
+display: none;
+}
+.SSN-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.SSN-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.SSN-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.SSN-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+/*------------------------------------------EMPLOYMENT INCOME Toggles---------------------------------------------------------------------------------------------------------*/
+.EmploymentIncome-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+    margin-top: 15px
+}
+.EmploymentIncome-switch input {
+display: none;
+}
+.EmploymentIncome-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.EmploymentIncome-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.EmploymentIncome-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.EmploymentIncome-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+/*--------------------------*/
+.section_note3{
+    background: #F5F39B;
+    width: 58%;
+    margin-top: 90px;
+    margin-left: 5px;
+}
+.section_note3 text{
+    font-size: 12px;
+   line-height: 12px;
+    font-weight: 300;
+    padding: 10px 5px;
+
+}
+/*---------------------------------------------------------*/
+.section_EmplymentIncome_Ques2 p{
+  margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+select{
+    width: 20%;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid #807a7a;
+    margin-left: 25px;
+}
+.section_EmplymentIncome_Ques2 text{
+   margin-left: 20px;
+   background: #337AB7;
+    color: white;
+    border-radius: 30px;
+        border:4px solid #337AB7;
+    height: 20px;
+    width: 20px;
+}
+/*---------------------------------------------------------------------------*/
+.section_note4{
+    background: #F5F39B;
+    width: 58%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.section_note4 text{
+    font-size: 12px;
+   line-height: 12px;
+    font-weight: 300;
+    padding: 10px 5px;
+
+}
+/*-----------------------------------------------------------------------------*/
+.section_EmplymentIncome_Ques3 p{
+  margin-top: 15px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 0px;
+    width: 40%;
+}
+.Fifth_Drag{
+background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 10px 10px;
+font-size: 18px;
+width: 40%;
+margin-bottom: 20px;
+  
+}
+.btn-Employee_selectFile2{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+.Fifth_Drag text{
+font-size: 15px;
+margin-left: 45px;
+font-family: Segoe UI;
+font-style: normal;
+}
+/*------------------------------------------------------------------------------*/
+.section_EmplymentIncome_Ques3-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+   top: 0px
+}
+.section_EmplymentIncome_Ques3-switch input {
+display: none;
+}
+.section_EmplymentIncome_Ques3-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.section_EmplymentIncome_Ques3-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.section_EmplymentIncome_Ques3-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.section_EmplymentIncome_Ques3-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+/*-----------------------------------------------------------------------------------------------*/
+.section_Emplymnet2{
+     background-color: aqua;
+    width: 70%;
+    margin-top: 00px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+/*-----------------------------------------------Section Yellow Note fifth--------------------------------------------------*/
+.section_note5{
+    background: #F5F39B;
+    width: 58%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.section_note5 text{
+    font-size: 12px;
+   line-height: 12px;
+    font-weight: 300;
+    padding: 10px 5px;
+}
+/*----------------------------------------------Section Yellow Note Sixth--------------------------------------------------------------------------*/
+    .section_note6{  background: #F5F39B;
+    width: 58%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.section_note6 text{
+    font-size: 12px;
+   line-height: 12px;
+    font-weight: 300;
+    padding: 10px 5px;
+}
+/*-----------------------------------------OTHER INCOME-----------------------------------------------------------------------------------------*/
+.section_Other_income{
+       background-color:#2DC3E8;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 30px;
+    height: 25px;
+}
+.section_Other_income text{
+    color: white;
+   font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.p_Other_incomeQue{
+    margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+/*---------------------------------------------------EMPLOYMENT INCOME Drag & Drop--------------------------------------------------------------------*/
+.section_OtherIncome{
+     background-color: aqua;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.Sixth_Drag{
+background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 10px 10px;
+font-size: 18px;
+
+    width: 50%;
+margin-bottom: 20px;
+  
+}
+.btn-OtherIncome_selectFile{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+.Sixth_Drag text{
+font-size: 14px;
+margin-left: 25px;
+font-family: Segoe UI;
+font-style: normal;
+}
+/*-------------------------------------------------------------------------*/
+/*------------------------------------------EMPLOYMENT INCOME Toggles---------------------------------------------------------------------------------------------------------*/
+.OtherIncome-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+    margin-top: 10px
+}
+.OtherIncome-switch input {
+display: none;
+}
+.OtherIncome-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.OtherIncome-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.OtherIncome-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.OtherIncome-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------BANKING INFO Drag & Drop--------------------------------------------------------------------*/
+.section_BankingInfo{
+      background-color:#2DC3E8;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 120px;
+    height: 25px;
+}
+.section_BankingInfo text{
+    color: white;
+}
+.p_BankingInfo{
+
+    margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+
+}
+.Seventh_Drag{
+background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 10px 10px;
+font-size: 18px;
+margin-left: 25px;
+width: 50%;
+margin-bottom: 20px;
+
+  
+}
+.btn-BankingInfo_selectFile{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+.Seventh_Drag text{
+font-size: 14px;
+margin-left: 25px;
+font-family: Segoe UI;
+font-style: normal;
+}
+/*-------------------------------------------------------------------------*/
+/*------------------------------------------BANKING INFO Toggles---------------------------------------------------------------------------------------------------------*/
+.BankingInfo-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+    margin-top: 10px
+}
+.BankingInfo-switch input {
+display: none;
+}
+.BankingInfo-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.BankingInfo-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.BankingInfo-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.BankingInfo-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+
+/*-----------------------------------------OTHER INCOME-----------------------------------------------------------------------------------------*/
+.section_BankingInformation{
+       background-color:#2DC3E8;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 100px;
+    height: 25px;
+}
+.section_BankingInformation text{
+    color: white;
+}
+.p_Bankinginfo{
+    margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.BankingInfo-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+    margin-top: 10px
+}
+.BankingInfo-switch input {
+display: none;
+}
+.BankingInfo-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.BankingInfo-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.BankingInfo-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.BankingInfo-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.section_BankInfoDrag{
+     background-color: aqua;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.Seventh_Drag{
+background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 10px 10px;
+font-size: 18px;
+
+    width: 50%;
+margin-bottom: 20px;
+  
+}
+.btn-section_BankInfo_selectFile{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+.Seventh_Drag text{
+font-size: 14px;
+margin-left: 25px;
+font-family: Segoe UI;
+font-style: normal;
+}
+/*----------------------------------------------Section Yellow Note Seventh-------------------------------------------------------------------------*/
+    .section_note7{  background: #F5F39B;
+    width: 58%;
+    margin-top: 80px;
+    margin-left: 5px;
+}
+.section_note7 text{
+    font-size: 12px;
+   line-height: 12px;
+    font-weight: 300;
+    padding: 5px 5px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.section_OtherDocumnets{
+         background-color:#2DC3E8;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 20px;
+    height: 25px;
+}
+.section_OtherDocumnets text{
+       color: white;
+}
+.p_Otherinfo{
+       margin-top: 20px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+    margin-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+/*-----------------------------------------OTHER INFO Toggles---------------------------------------------------------------------------------------------------------*/
+.OtherInfo-switch label {
+width: 120px;
+min-height: 32px;
+background: #dddddd;
+border: 2px solid #b8b8b8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+margin-left: 500px;
+    margin-top: 10px
+}
+.OtherInfo-switch input {
+display: none;
+}
+.OtherInfo-switch span {
+width: 100%;
+max-width: 50%;
+flex: 50%;
+display: inline-block;
+color: #5c5c5c;
+font-size: 12px;
+font-family: Segoe-UI-Bold;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+.OtherInfo-switch label::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background: #b8b8b8;
+height: 100%;
+z-index: 1;
+}
+.OtherInfo-switch label::after {
+content: "";
+position: absolute;
+top: 0px;
+left: 0;
+width: 50%;
+background: #cfffa5;
+height: 100%;
+transition: 0.3s;
+}
+.OtherInfo-switch input:checked ~ label::after {
+transition: 0.3s;
+left: 50%;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+.section_OtherDocuDrag{
+     background-color: aqua;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.Eighth_Drag{
+background: #FFFFFF;
+border: 0.5px solid #868686;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 10px 10px;
+font-size: 18px;
+
+    width: 50%;
+margin-bottom: 20px;
+  
+}
+.btn-OtherDocu_selectFile{
+    text-decoration: none;
+    background: #2DC3E8;
+border-radius: 2px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 2px
+}
+.Eighth_Drag text{
+font-size: 14px;
+margin-left: 25px;
+font-family: Segoe UI;
+font-style: normal;
+}
+/*---------------------------------------------------SECTION NOTE 8-----------------------------------------------------------------------------------------*/
+.section_note8{
+     width: 58%;
+    margin-top: 80px;
+    margin-left: 5px;
+     background: #F5F39B;
+}
+.section_note8 text{
+    font-size: 12px;
+   line-height: 12px;
+    font-weight: 300;
+    padding: 5px 5px;
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+.section_LastButton{
+   width: 12%;
+    background: linear-gradient(253.58deg, #65DCFA 1.55%, #24A6D8 95.8%);
+border-radius: 2px;
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 25px;
+    padding: 8px 10px;
+    
+}
+
+.btn-LastButton{
+     text-decoration: none;
+   color: white;
+}
